@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulse Hunter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main-menu">
+    <h1>⚡ Pulse Hunter ⚡</h1>
+    <button onclick="startGame()">▶ Play</button>
+    <button onclick="toggleSettings()">🎛️ Settings</button>
+    <button onclick="toggleShop()">🛒 Shop</button>
+  </div>
+
+  <div id="settings" class="hidden">
+    <h2>Settings</h2>
+    <label>SFX Volume: <input type="range" id="sfxVolume" min="0" max="1" step="0.1" value="1"></label>
+    <button onclick="toggleSettings()">Close</button>
+  </div>
+
+  <div id="shop" class="hidden">
+    <h2>Upgrade Shop</h2>
+    <p>Coins: <span id="shopCoins">0</span></p>
+    <button onclick="buyUpgrade('damage', 50)">+Damage (50 coins)</button>
+    <button onclick="buyUpgrade('rate', 75)">+Fire Rate (75 coins)</button>
+    <button onclick="toggleShop()">Close</button>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <footer>Electric Games 2025 Rights Reserved</footer>
+
+  <script src="game.js"></script>
+</body>
+</html>

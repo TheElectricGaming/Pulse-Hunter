@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #000000, #0f0f0f);
+  color: #00f5ff;
+  overflow: hidden;
+}
+#main-menu, #settings, #shop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border: 3px solid #00f5ff;
+  border-radius: 15px;
+  text-align: center;
+}
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background: #00f5ff;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #00c9d9;
+}
+.hidden {
+  display: none;
+}
+canvas {
+  display: block;
+  background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'), linear-gradient(to bottom, #000022, #000033);
+  background-size: cover;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: #000;
+  color: #00f5ff;
+  font-size: 0.8em;
+}
